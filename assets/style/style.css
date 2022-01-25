@@ -1,0 +1,29 @@
+#h_wd {
+    width: 100vw;
+    background-color: #ffc107;
+    position: sticky;
+    text-align: center;
+    padding: 2em;
+    margin: 0% auto;
+}
+
+/* wireframe purpose */
+.searchbtn, #cardcurrent{
+    display: block;
+    width: 100%;
+}
+
+/* decoration */
+#citysearchicon {
+    position: absolute;
+    right: 1em;
+    align-self: center;
+    z-index: 3;
+}
+
+#cardforecast {
+    width: 300px;
+}
+
+
+/* add responsive design to aside */
