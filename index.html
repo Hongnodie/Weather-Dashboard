@@ -54,43 +54,24 @@
     </aside>
 
         <!-- fetched result column displaying the weather condition-->
-        <div class="col-8">
-            <!-- Appended text area with border for today -->
+        <div class="col-8" id="displaypart">
             <div class="card" id="cardcurrent" >
-                <div class="row mb-4" id="curr-weather-row">
-                    <div class="card" id="current-weather">
-                        <div class="row pl-1">
-                            <h2 class="city date"></h2>
-                          </div>
-                          <div class="row pl-1">
-                           <p class="describe"></p> 
-                          </div>
-                          <div class="row pl-1">
-                            <p class="temp"></p>
-                          </div>
-                          <div class="row pl-1">
-                            <p class="hum"></p>
-                          </div>
-                          <div class="row pl-1">
-                            <p class="wind"></p>
-                          </div>
-                          <div class="row pl-1">
-                            <p class="uv"></p>
-                        </div>
+                <!-- Top section: Appended text area with border for today -->
+                <div class="row p-4" id="curr-weather-row">
+                    <div class="card p-4 fs-5" id="current-weather">
                     </div>
                 </div>
-
-                <div class="row" id="daily-weather-row">
-                      <h3>5-Day Forecast:</h3>
-                      
-                      <div class="row" id="five-day-forecast-cards">
-                      </div>
+                
+                <!-- Bottom section: show forecast card -->
+                <div class="row p-4" id="daily-weather-row">
+                    <!-- Shwo card header -->
+                    <h3 class="d-none" id="Forecastheader">5-Day Forecast:</h3>
+                    <!-- Show forecast cards here -->
+                    <div class="row" id="forecastcard">
+                    </div>
                 </div>
-
             </div>
-
-            </div>
-        </div>
+        </div>        
 
     </Main>
 
