@@ -24,33 +24,34 @@
 
     <Main class="row p-4 m-5">  
         <!-- sidebar with search button -->
-        <aside class="col-4">
-                <!-- Search section -->
-                <sec>
-                    <h2 id="searchbarheader">Search For a City</h2>
-                    
-                    <div class="input-group mb-3">
-                        <!-- header for input bar -->
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon3">City name</span>
-                        </div>
-                        <!-- Input bar added -->
-                        <input type="text" class="form-control" id="cityname" aria-describedby="basic-addon3" autocomplete="on" placeholder="Enter city name here">
-                        <div id="citysearchicon"><i class="fas fa-search-location"></i></div>
+        <aside class="col-4 align-items-stretch" id="asidepart">
+            <!-- Search section -->
+            <sec>
+                <!-- Search header -->
+                <h2 id="searchbarheader">Search For a City</h2>
+                <!-- Search text blanket -->
+                <div class="input-group mb-3">
+                    <!-- Indicator for input bar -->
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">City name</span>
                     </div>
-
-                    <button type="search" value="search" class="btn btn-outline-primary searchbtn btn-block">Search</button>
-                    
-                </sec>
-
-                <!-- Search history section-->
-                <sec class="card my-3">
-                    <div class="card-header h5 text-center"> Search history </div>
-                    
-                    <ul class="list-group list-group-flush" id="search-history">
-                    </ul>
-                </sec>
-        </aside>
+                    <!-- Input bar for texting -->
+                    <input type="text" class="form-control" id="cityname" aria-describedby="basic-addon3" placeholder="Enter city name here">
+                    <!-- decorative icon -->
+                    <div id="citysearchicon"><i class="fas fa-search-location"></i></div>
+                </div>
+                <!-- Search button -->
+                <button type="search" value="search" class="btn btn-outline-primary searchbtn btn-block">Search</button>                    
+            </sec>
+            <!-- Search history section-->
+            <sec class="card my-3">
+                <!-- History header -->
+                <div class="card-header h5 text-center"> Search history </div>
+                <!-- History list -->
+                <ul class="list-group list-group-flush" id="searchhistory">
+                </ul>
+            </sec>
+    </aside>
 
         <!-- fetched result column displaying the weather condition-->
         <div class="col-8">
