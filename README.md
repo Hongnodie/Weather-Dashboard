@@ -16,7 +16,7 @@ Developers are often tasked with retrieving data from another application's API 
 
 [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys) API key instruction.
 
-[Icons available at](https://fontawesome.com/v5.15/icons?d=gallery&p=2)
+[Icons available here](https://fontawesome.com/v5.15/icons?d=gallery&p=2)
 
 ### User Story
 
@@ -44,7 +44,11 @@ THEN I am again presented with current and future conditions for that city
 
 ### Key features
 
-Sidebar that store search history as an array
+Sidebar that store search history as an array  
+City name and search history be saved to the local storage  
+Repeated or invalid serach input will not be put into search history  
+Well tracked coding structure  
+
 
 ### Screenshot
 
