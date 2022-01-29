@@ -55,7 +55,7 @@ function getCurrentWeather(paraC) {
         else { 
           alert('Error: ' + response.statusText); 
         }
-      }).catch(function (error) { alert('Invalid function therefore unable to retrieve weather data'); }
+      }).catch(function (error) { alert('Error incurred therefore unable to retrieve weather data'); }
     );
 }
 
