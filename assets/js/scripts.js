@@ -60,8 +60,41 @@ function getCurrentWeather(paraC) {
 }
 
 // Pointer and Function of show forecast card Step 3-2
-function showforecast() {
+var forecastcard = document.getElementById("forecastcard");
 
+function showforecast() {
+  // guided by https://openweathermap.org/api/one-call-api
+  let forecastweatherapi = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&units=Imperial&appid=${apikey}`;
+
+  fetch(forecastweatherapi)
+    .then(function (response) {
+      if (response.ok) {
+        response.json().then(function (response) {
+          console.log(response, 76);
+          document.getElementById("Forecastheader").setAttribute("class", "")
+          forecastcard.innerHTML = "";
+          // set 6 as a handler of 5 day forecast (starting from tomorrow)
+          for (var i = 1 ; i < 6; i++ ) {
+            forecastcard.innerHTML += `
+              <div class="card col-sm-4 p-4 my-3">
+                <h5 class='card-title'>${moment(response.daily[i].dt, "X").format("MM/DD/YYYY")}</h5>
+                <img src="https://openweathermap.org/img/wn/${response.daily[i].weather[0].icon}@2x.png" class="iconimage">
+                <div class="justify-between">
+                  Temp (day to eve): ${response.daily[i].temp.day} ~ ${response.daily[i].temp.eve}°F <br>
+                  Humidity:  ${response.daily[i].humidity} % <br>
+                  Wind Speed:  ${response.daily[i].wind_speed} mph </div>
+              </div> `
+          }
+            // Add uv index
+            uvappend(response);
+                        
+            // Uv index attach function
+            function uvappend(paraD) {
+            
+            }
+        })
+      } 
+    });
 }
 
 // Append button to the history of each cityname input
