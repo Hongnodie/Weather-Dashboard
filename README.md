@@ -3,6 +3,7 @@
 ### Link
 
 [Open html page](https://hongnodie.github.io/Weather-Dashboard/)
+
 [See coding files](https://github.com/Hongnodie/Weather-Dashboard.git)
 
 ### Aim
@@ -12,7 +13,9 @@ Developers are often tasked with retrieving data from another application's API 
 ### Resources
 
 [OpenWeather One Call API](https://openweathermap.org/api/one-call-api) -- retrieve weather data for cities. 
+
 [Full-Stack Blog on how to use API keys](https://coding-boot-camp.github.io/full-stack/apis/how-to-use-api-keys) API key instruction.
+
 [Icons available at](https://fontawesome.com/v5.15/icons?d=gallery&p=2)
 
 ### User Story
@@ -45,6 +48,14 @@ Sidebar that store search history as an array
 
 ### Screenshot
 
-[The weather app demo](./assets/images/demo.png)
-[The weather app screenshot](./assets/images/screenshot.png)
-[The weather app responsive design](./assets/images/responsivedesign.png)
+The weather app screenshot
+
+![The weather app screenshot](./assets/images/screenshot.png)
+
+Responsive design
+
+![The weather app responsive design](./assets/images/responsivedesign.png)
+
+Demo
+
+![The weather app demo](./assets/images/demo.png)
