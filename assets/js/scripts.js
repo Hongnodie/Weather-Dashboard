@@ -90,7 +90,21 @@ function showforecast() {
                         
             // Uv index attach function
             function uvappend(paraD) {
-            
+              let uvline = document.createElement("span");
+              uvline.textContent = "Uv:";
+              
+              let uvindex = document.createElement("span");
+              uvindex.textContent = paraD.current.uvi;
+              // criteria base from https://www.cancer.org.au/blog/health-check-what-does-the-uv-index-mean
+              if (paraD.current.uvi<5) {
+                uvindex.setAttribute("class", "m-1 btn d-inline-block bg-success text-white")
+              } else if (paraD.current.uvi<8) {
+                uvindex.setAttribute("class", "m-1 btn d-inline-block bg-warning text-white")
+              } else {
+                uvluvindexine.setAttribute("class", "btn d-inline-block bg-danger text-white")
+              }
+              currentweather.appendChild(uvline);
+              uvline.appendChild(uvindex);
             }
         })
       } 
