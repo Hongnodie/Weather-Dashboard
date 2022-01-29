@@ -46,3 +46,5 @@ Sidebar that store search history as an array
 ### Screenshot
 
 ![The weather app demo](./assets/images/demo.png)
+![The weather app screenshot](./assets/images/screenshot.png)
+![The weather app responsive design](./assets/images/responsivedesign.png)
