@@ -22,7 +22,7 @@ var currentweather = document.getElementById("current-weather");
 const apikey = "7e0dfeaa5d115777441ab4aec1f884c9";
 
 function getCurrentWeather(paraC) {
-  let currentweatherapi = `http://api.openweathermap.org/data/2.5/weather?q=${paraC}&units=imperial&appid=${apikey}`;
+  let currentweatherapi = `https://api.openweathermap.org/data/2.5/weather?q=${paraC}&units=imperial&appid=${apikey}`;
 
   fetch(currentweatherapi)
       .then(function (response) {
