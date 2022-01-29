@@ -112,6 +112,15 @@ function showforecast() {
 }
 
 // Append button to the history of each cityname input
-function attachhistorybtn() {
+var searchhistory = document.getElementById("searchhistory");
 
+function attachhistorybtn() {
+  let searchhistorybtn = document.createElement("button");
+  searchhistorybtn.textContent = cityname;
+  searchhistorybtn.setAttribute("class", "list-group-item list-group-item-action text-center");
+  searchhistory.appendChild(searchhistorybtn);
+  searchhistorybtn.addEventListener("click", function(){
+    historycity = this.textContent;
+    getCurrentWeather(historycity);
+  })
 }
